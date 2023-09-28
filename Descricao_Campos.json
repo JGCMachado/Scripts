@@ -1,0 +1,60 @@
+[
+  {
+    "Name": "nome_funcao",
+    "Type": "varchar",
+    "Comment": "Descrição: Nome da Função em que foi classificada a despesa associada a emenda. Maior nível de agregação das áreas de atuação do setor público. Exemplo: cultura, educação, saúde Domínio: Campo string. Domínio não disponível no Portal da Transparência"
+  },
+  {
+    "Name": "ano_emenda",
+    "Type": "int",
+    "Comment": "O ano em que a emenda parlamentar foi proposta. Dominio de Valores: campo numerico de quatro digitos, representando o ano, devera ser maior ou igual a 2014 ano inicial disponibilizado no arquivo"
+  },
+  {
+    "Name": "valor_empenhado",
+    "Type": "decimal",
+    "Comment": "Descrição: Representa o montante de recursos que o governo se compromete a gastar ou alocar para uma determinada emenda ao longo de um exercício financeiro. Domínio de Valores: Valores numéricos positivos."
+  },
+  {
+    "Name": "nome_subfuncao",
+    "Type": "varchar",
+    "Comment": "Descrição: Subfunção orçamentária associada aos gastos da emenda exemplo: Atenção Básica de Saúde, Ensino Fundamental, Rodovias. Subcategoria da Função. Domínio : Campo string. Domínio não disponível no Portal da Transparência."
+  },
+  {
+    "Name": "valor_restos_a_pagar_pagos",
+    "Type": "decimal",
+    "Comment": "Descrição: O valor não utilizado no ano fiscal e que foi inscrito como \"Restos a Pagar\" e posteriormente pago. Domínio de Valores: Valores numéricos positivos, menores ou iguais ao valor empenhado."
+  },
+  {
+    "Name": "valor_pago",
+    "Type": "decimal",
+    "Comment": "Descrição: Valor que representa a quantia de recursos que efetivamente foi desembolsada ou transferida para a execução de uma emenda específica. Domínio de Valores: Valores numéricos positivos, menores ou iguais ao valor empenhado."
+  },
+  {
+    "Name": "abrangencia_emenda",
+    "Type": "varchar",
+    "Comment": "Determina se a Emenda é de âmbito Municipal, Estadual ou Nacional Dominio: Campo string Categorias Possíveis: Municipal, Estadual, Nacional ou NI - Não identificada"
+  },
+  {
+    "Name": "tipo_emenda",
+    "Type": "varchar",
+    "Comment": "Descrição: Tipo de emenda parlamentar, indica o proponente da emenda parlamentar. Domínio de Valores: Campo String Categorias Possíveis: Emenda Individual Emenda de Comissão Emenda de Bancada e Emenda de Relator"
+  },
+  {
+    "Name": "nome_autor_emenda",
+    "Type": "varchar",
+    "Comment": "Nome do autor da emenda parlamentar, conforme registrado no Sistema de Administração Financeira do Governo Federal - SIAFI Dominio: Campo tipo string"
+  },
+  {
+    "Name": "localidade_gasto",
+    "Type": "varchar",
+    "Comment": "Descrição: Localidade para qual os recursos foram destinados. Domínio: String. Varia dependendo da brangência. se for municipal contem o nome do município e a UF, se for estadual contem o nome do estado e se for nacional a palavra nacional"
+  },
+  {
+    "Name": "abrangencia_sigla",
+    "Type": "varchar",
+    "Comment": "Descrição: Baseado na abrangência da emenda contém a UF do estado para abrangências municipais e estaduais e  “BR” para abrangência Nacional Domínio: String Categorias: Listas das UFs brasileiras + “BR” para abrangência nacional + “NI”-Não identificada"
+  }
+]
+
+
+
